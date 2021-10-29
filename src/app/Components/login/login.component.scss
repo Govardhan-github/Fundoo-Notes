@@ -1,0 +1,319 @@
+.container{
+    position: relative;
+    height: 380px;
+    width: 420px;
+    margin-top: 30px;
+    border:1px solid gray ;
+    margin: 6% auto;
+    padding: 3% 2%;
+    border-radius: 8px;
+}
+
+.FundooName{
+    margin-top: -50px;
+    text-align: center;
+    font-size: 25px;
+}
+#Fletter{
+     color: red;
+     }
+     #Uletter{
+        color: #ffa500;
+    }#Nletter{
+       color: blue;
+     }#Dletter{
+         color: blue;
+     }
+ #Oletter{
+         color: green;
+     }#O1letter{
+         color:red;
+     }
+.btn1{
+    position: relative;
+    cursor: pointer;
+    top: -8px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+.btn2{
+    cursor: pointer;
+    bottom: -20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+.button1{
+    cursor: pointer;
+    margin-top: 50px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}     
+.button2{
+    cursor: pointer;
+    margin-top: 50px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    background-color:blue;
+    color: white;
+    width: 50px;
+    height: 25px;
+    margin-right: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.error{
+    color: red;
+}
+.langauge{
+    margin-top: 60px;
+    margin-left: -20px;
+}
+#lang{
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.list{
+    float: left;
+    margin-left: 240px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#l1{
+    display: flex;
+    flex-direction: row;
+    margin-right:30px;
+}
+
+#l2{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#l3{
+    display: flex;
+    flex-direction: row;
+    margin-right:320px;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color:black;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        border: none;
+    }
+
+    .FundooName{
+        text-align: center;
+    }
+    .list{
+        float: left;
+        margin-left: 150px;
+        margin-top: -20px;
+    }
+    #l1{
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-right: 10px;
+    }
+    #l2{
+        display: flex;
+        color: black;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+    #l3{
+        display: flex;
+        color: black;
+        flex-direction: row;
+        margin-right: 5px;
+    }
+    
+}     
+
+// .container{
+//     border: 1px solid gray;
+//     height: 480px;
+//     width: 500px;
+//     margin-left: 350px;
+//     border-radius: 10px;
+//     margin-top: 50px;
+// }
+// .form{
+//     margin-top: -20px;
+// }
+// .FundooName{
+//     text-align: center;
+//     margin-top: 50px;
+//     font-size: 25px;
+// }
+// #Fletter{
+//     color: red;
+// }
+// #Uletter{
+//     color: #ffa500;
+// }#Nletter{
+//     color: blue;
+// }#Dletter{
+//     color: blue;
+// }
+// #Oletter{
+//     color: green;
+// }#O1letter{
+//     color:red;
+// }
+// .signin{
+//     text-align: center;
+//     font-size: 25px;
+//     margin-top:  20px;
+//     color: black;
+// }
+// .head{
+//     text-align: center;
+//     margin-top: 20px;
+//     font-size: 20px;
+// }
+// .username{
+//     margin-top: 30px;
+//     margin-left: 40px;
+// }
+// #username{
+//     width: 400px;
+// }
+// .forgotemail{
+//     position: relative;
+//     margin-left: 40px;
+//     top:-19px;
+// }
+// #forgotemail{
+//     border-bottom: 0;
+//     border-top: 0;
+//     border-left: 0;
+//     border-right: 0;
+//     background-color: white;
+//     color: blue;
+//     cursor: pointer;
+//     font-size: 15px;
+//     font-weight: bold;
+// }
+// .learmore-head{
+//     margin-left: 50px;
+//     margin-top: 35px;
+// }
+// #learn-head{
+//     font-size: 14px;
+// }
+// a:link{
+//     text-decoration: none;
+// }
+// #learmore-head1{
+//     color: blue;
+//     font-weight: bold;
+// }
+
+// .button1{
+//     margin-left: 40px;
+//     border-bottom: 0;
+//     border-top: 0;
+//     border-left: 0;
+//     border-right: 0;
+//     background-color: white;
+//     font-size: 15px;
+//     color: blue;
+//     cursor: pointer;
+//     font-weight: bold;
+// }
+
+// .button2{
+//     margin-right: 100px;
+//     border-bottom: 0;
+//     border-top: 0;
+//     border-left: 0;
+//     border-right: 0;
+//     background-color: blue;
+//     cursor: pointer;
+//     color: white;
+//     font-weight: bold;
+//     height: 35px;
+//     width: 75px;
+//     border-radius: 5px;
+//     opacity: 0.8;
+// }
+// .lang{
+//     margin-left: 10px;
+//     margin-top: 40px;
+// }
+// #langauge{
+//     border-bottom: 0;
+//     border-top: 0;
+//     border-left: 0;
+//     border-right: 0;
+// }
+// .list{
+//     margin-left: 290px;
+//     margin-top: -20px;
+
+// }
+// #l1{
+//     display: flex;
+//     flex-direction: row;
+//     color: black;
+//     margin-right: 20px;
+// }
+// #l2{
+//     display: flex;
+//     color: black;
+//     flex-direction: row;
+//     margin-right: 20px;
+// }
+// #l3{
+//     display: flex;
+//     color: black;
+//     flex-direction: row;
+//     margin-right: 10px;
+// }
+
+// @media only screen and (max-width: 600px) {
+//     .container{
+//         border: 1px solid gray;
+//         height: 480px;
+//         width: 500px;
+//         border-radius: 10px;
+//         margin-top: 50px;
+//     }
+    
+
+//     .FundooName{
+//         margin-top: 50px;
+//         font-size: 25px;
+//     }
+
+//     .button-section{
+//         margin-top: 10%;
+//     }
+// }

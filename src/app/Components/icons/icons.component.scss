@@ -1,0 +1,49 @@
+#container{
+    max-width: 160px;
+    max-height: 50px;
+
+}
+
+ .buttons{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 0px;
+    cursor: pointer;
+    
+}
+
+#icon{
+    margin-left: -8px;
+}
+.menu-icon{
+    margin-top: 34px;
+}
+
+.icons{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#undo{
+    opacity: 0.2;
+    margin-top: 5px;
+    height: 15px;
+    width: 15px;
+}
+
+#close-button{
+    cursor: pointer;
+    margin-left: 150px;
+    font-size: 15px;
+    margin-top: 45px;
+}
+#close-button:visited{
+    background-color: yellowgreen;
+}
+
+::ng-deep .mat-menu-item {
+    line-height: 0px !important;
+    height     : 32px !important;
+ }

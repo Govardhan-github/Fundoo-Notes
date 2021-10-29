@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+   <div class="container" fxFlex.xs=100  >
+        <div class="form-container">
+            <div>
+                <link rel="stylesheet" href="./registration.component.scss">
+            </div>
+            <div id="form-container" class="form" fxLayout="column" style="padding-top: 10%;">
+                <form [formGroup]="registration">
+                    <div class="FundooName" text-align="center">
+                        <span id="Fletter">F</span>
+                        <span id="Uletter">u</span>
+                        <span id="Nletter">n</span>
+                        <span id="Dletter">d</span>
+                        <span id="Oletter">o</span>
+                        <span id="O1letter">o</span><br><br>
+                        <span id="head">Create Your Fundoo Account</span>
+                    </div>
+                    <div class="name" fxLayout="row" fxLayoutGap="5px" fxLayout.xs="column" >
+                        <div>
+                            <mat-form-field  appearance="outline" fxFlex.xs=100>
+                            <mat-label>First name</mat-label>
+                            <input  matInput placeholder="Placeholder" formControlName="Firstname"   [ngClass]="{ 'is-invalid': submitted && f.Firstname.errors }" />
+                            <mat-hint *ngIf="submitted && f.Firstname.errors" class="invalid-feedback">
+                                <mat-hint *ngIf="f.Firstname.errors.required" class="error">e is reFirst Namquired</mat-hint>
+                            </mat-hint>
+                            </mat-form-field>  
+                        </div>    
+                        <div>
+                            <mat-form-field  appearance="outline" fxFlex.xs=100>
+                            <mat-label>Last name</mat-label>
+                            <input matInput placeholder="Placeholder" formControlName="Lastname"  [ngClass]="{ 'is-invalid': submitted && f.Lastname.errors }" />
+                            <mat-hint *ngIf="submitted && f.Lastname.errors" class="invalid-feedback">
+                                <mat-hint *ngIf="f.Lastname.errors.required" class="error">Last Name is required</mat-hint>
+                            </mat-hint>
+                            </mat-form-field>
+                        </div>  
+                    </div>    
+                    <div class="email">
+                        <p>
+                            <mat-form-field id="email" appearance="outline" style="width:68%;" fxLayout.xs="column" fxFlex.xs=100 >
+                            <mat-label>Username</mat-label>
+                            <input matInput placeholder="Placeholder" formControlName="username"  [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                            <mat-hint *ngIf="submitted && f.username.errors" >
+                                <mat-hint *ngIf="f.username.errors.required"class="error">Email is required</mat-hint>
+                            </mat-hint>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div class="head1">
+                        <button id="head1" >Use my current email address instead</button>
+                    </div>   
+                    <div class="password" fxLayout="row" fxLayoutGap="5px"  fxLayout.xs="column" >
+                        <div>
+                            <mat-form-field id="pswrd" appearance="outline" fxFlex.xs=100  >
+                            <mat-label >password</mat-label>
+                            <input type="password" matInput placeholder="Placeholder" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                            <mat-hint *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                <mat-hint *ngIf="f.password.errors.required" class="error">password is required</mat-hint>
+                                <mat-hint *ngIf="f.password.errors.minlength" class="pass-length" class="error">Password must be at least 6 characters</mat-hint>
+                            </mat-hint>
+                            </mat-form-field>
+                        </div>    
+                        <div>
+                            <mat-form-field id="confirm" appearance="outline" fxFlex.xs=100>
+                            <mat-label >confirm</mat-label>
+                            <input type="password" matInput placeholder="Placeholder" formControlName="confirm" [ngClass]="{ 'is-invalid': submitted && f.confirm.errors }" />
+                            <mat-hint *ngIf="submitted && f.confirm.errors" class="invalid-feedback">
+                                <mat-hint *ngIf="f.confirm.errors.required" class="error">password is required</mat-hint>
+                            </mat-hint>
+                            </mat-form-field>
+                        </div>  
+                    </div> 
+                    <div>
+                        <mat-checkbox class="example-margin">Show Password</mat-checkbox>
+                    </div>
+                    <div class="image-con">
+                        <img class="image" src="assets/Registration-image/account (1).svg" alt="">
+                        <div class="sub-head">
+                            One account. All of Google working for you.
+
+                        </div>
+
+                    </div>
+
+                    <div class="button-section"  fxLayoutAlign="space-between" style="padding-top: 5%; margin-top: 25px;">
+                        <button mat-button type="button" class="button1" routerLink="/login">Sign in instead</button>
+                        <button mat-raised-button class="button2" type="submit" (click)="onSubmit()">Next</button>
+                    </div>
+         
+                    <div class="langauge"> 
+                        <select name="lang" id="lang">
+                            <option value="">English (United States)</option>
+                            <option value="">English (United Kingdom)</option>
+                            <option value="">Indonesia</option>
+                        </select> 
+                    </div>
+                    <ul class="list" fxLayout="row">
+                        <a href=""><li id="l1">Help</li></a>
+                        <a href=""><li id="l2">Privacy</li></a>
+                        <a href=""><li id="l3">Terms</li></a>
+                    </ul> 
+                </form>    
+            </div>
+        </div>
+    </div>
+</html>

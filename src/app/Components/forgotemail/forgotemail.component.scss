@@ -1,0 +1,229 @@
+.container{
+    position: relative;
+    height: 310px;
+    width: 420px;
+    margin-top: 30px;
+    border:1px solid gray ;
+    margin: 6% auto;
+    padding: 3% 2%;
+    border-radius: 8px;
+
+}
+
+.FundooName{
+    margin-top: -40px;
+    text-align: center;
+    font-size: 25px;
+}
+#Fletter{
+    color: red;
+}
+#Uletter{
+    color: #ffa500;
+}
+#Nletter{
+    color: blue;
+}
+#Dletter{
+    color: blue;
+    }
+#Oletter{
+    color: green;
+}
+#O1letter{
+    color:red;
+}
+#head1{
+    font-size: 18px;
+}
+
+.error{
+    color: red;
+}
+.langauge{
+    
+    margin-right: 310px;
+    margin-top: 50px;
+}
+#lang{
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.list{
+    float: left;
+    margin-left: 250px;
+    margin-top: -20px;
+}
+#l1{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin-right: 20px;
+}
+#l2{
+    display: flex;
+    color: black;
+    flex-direction: row;
+    margin-right: 20px;
+}
+#l3{
+    display: flex;
+    color: black;
+    flex-direction: row;
+    margin-right: 10px;
+}
+    
+.button1{
+    cursor: pointer;
+    margin-top: 50px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    background-color:blue;
+    color: white;
+    width: 50px;
+    height: 25px;
+    margin-right: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
+}
+@media only screen and (max-width: 599px){
+    .container{
+        border: none;
+    }
+    .list{
+        float: left;
+        margin-left: 150px;
+        margin-top: -20px;
+    }
+    #l1{
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-right: 10px;
+    }
+    #l2{
+        display: flex;
+        color: black;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+    #l3{
+        display: flex;
+        color: black;
+        flex-direction: row;
+        margin-right: 5px;
+    }
+}
+// .container{
+//     border: 1px solid gray;
+//     height: 450px;
+//     width: 550px;
+//     border-radius: 10px;
+//     margin-top: 50px;
+// }
+// .form{
+//     margin-top: -50px;
+// }
+// #head2{
+//     font-size: 20px;
+//     margin-top: -20px;
+// }
+// .button{
+//     margin-left: 420px;
+//     margin-top: -20px;
+//     cursor: pointer;
+//     border-bottom: 0;
+//     border-top: 0;
+//     border-left: 0;
+//     border-right: 0;
+//     background-color: blue;
+//     color: white;
+//     height: 30px;
+//     width: 45px;
+//     border-radius: 10px;
+// }
+
+// .FundooName{
+//     text-align: center;
+//     margin-top: 50px;
+//     font-size: 25px;
+// }
+// #Fletter{
+//     color: red;
+// }
+// #Uletter{
+//     color: #ffa500;
+// }#Nletter{
+//     color: blue;
+// }#Dletter{
+//     color: blue;
+// }
+// #Oletter{
+//     color: green;
+// }#O1letter{
+//     color:red;
+// }
+// .username{
+//     margin-top: 50px;
+//     margin-left: 50px;
+// }
+// #username{
+//     width: 85%;
+// }
+// .lang{
+//     margin-right:170px;
+//     margin-top: 90px;
+// }
+// #langauge{
+//     border-bottom: 0;
+//     border-top: 0;
+//     border-left: 0;
+//     border-right: 0;
+// }
+// .list{
+    
+//     margin-left: 350px;
+//     margin-top: -20px;
+// }
+// #l1{
+//     display: flex;
+//     flex-direction: row;
+//     color: black;
+//     margin-right: 20px;
+// }
+// #l2{
+//     display: flex;
+//     color: black;
+//     flex-direction: row;
+//     margin-right: 20px;
+// }
+// #l3{
+//     display: flex;
+//     color: black;
+//     flex-direction: row;
+//     margin-right: -20px;
+// }
+// a:link{
+//     text-decoration: none;
+// }
+// .error{
+//     color: red;
+// }
+
+// @media only screen and (max-width: 599px) {
+//     .container{
+//         border:none;
+//         padding: 4%;
+//     }
+
+//     .button-section{
+//         margin-top: 10%;
+//     }
+// }

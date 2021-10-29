@@ -1,0 +1,16 @@
+<div>
+  <div [formGroup]="updateNoteForm">
+    <div class="noteTitle" fxLayout="row" fxLayoutAlign="space-between center" fxLayout="column">
+      <input class="border" mat-dialog-title formControlName="title" placeholder="title" value="{{data.title}} " />
+      <button class="buttons">
+        <img class="pin" src="../../../assets/Icons/pin.svg" alt="">
+      </button>
+      <input class="border" mat-dialog-title formControlName="description" placeholder="description"
+        value="{{data.description}} " />
+    </div>
+    <div class="icon">
+      <app-icons class="icons"></app-icons>
+      <button class="button" mat-button mat-dialog-close (click)="updateNote(data)">Close</button>
+    </div>
+  </div>
+</div>

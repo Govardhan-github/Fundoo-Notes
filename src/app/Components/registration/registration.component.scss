@@ -1,0 +1,182 @@
+.container{
+    position: relative;
+    height: 480px;
+    width: 600px;
+    margin-top: 30px;
+    border:1px solid gray ;
+    margin: 6% auto;
+    padding: 3% 2%;
+    border-radius: 8px;
+}
+.FundooName{
+    font-size: 25px;
+}
+#Fletter{
+    color: red;
+}
+#Uletter{
+    color: #ffa500;
+}#Nletter{
+    color: blue;
+}#Dletter{
+    color: blue;
+}
+#Oletter{
+    color: green;
+}#O1letter{
+    color:red;
+}
+.form{
+    margin-top: -50px;
+}
+.name{
+    margin-top: 15px;
+}
+// #email{
+//     width: 407px;
+// }
+.password{
+    margin-top: 20px;
+}
+#head1{
+    cursor: pointer;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #1a73e8;
+    background-color: white;
+    font-weight: bolder;
+}
+.button1{
+    margin-top: -50px;
+    cursor: pointer;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #1a73e8;
+    background-color: white;
+    font-weight: bolder;
+}
+.button2{
+    margin-top: -70px;
+    background-color: #1a73e8;
+    margin-right: 200px;
+    color: white;
+    cursor: pointer;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 25px;
+    font-size: 15px;
+    color:white;
+    background-color:blue;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.error{
+    color: red;
+}
+.langauge{
+    position: relative;
+    margin-top: 30px;
+    left: -20px;
+    
+}
+#lang{
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.list{
+    float: left;
+    margin-left: 420px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#l1{
+    display: flex;
+    flex-direction: row;
+    margin-right:30px;
+}
+
+#l2{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#l3{
+    display: flex;
+    flex-direction: row;
+    margin-right:320px;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color:black;
+}
+.logo{
+    float: right;
+}
+.img-caption{
+    float: right;
+}
+.image-con{
+    margin-top: -400px;
+    margin-left: 290px;
+    height: 250px;
+    width: 250px;
+    padding: 100px;
+
+}
+.sub-head{
+    margin-top: -10px;
+    margin-left: 50px;
+    max-width: 200px;
+}
+@media only screen and (max-width: 599px) {
+    .container{
+        border:none;
+        padding: 4%;
+    }
+
+    .button-section{
+        margin-top: 10%;
+    }
+    .langauge{
+        position: relative;
+        margin-top: 50px;
+        left: -10px;
+        
+    }
+    .list{
+        float: left;
+        margin-left: 150px;
+        margin-top: -20px;
+    }
+    #l1{
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-right: 10px;
+    }
+    #l2{
+        display: flex;
+        color: black;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+    #l3{
+        display: flex;
+        color: black;
+        flex-direction: row;
+        margin-right: 5px;
+    }
+}

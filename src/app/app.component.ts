@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UserService} from '../app/Services/UserService/user.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Fundoo-Notes';
+  constructor(private user:UserService){
+  
+  }
 }

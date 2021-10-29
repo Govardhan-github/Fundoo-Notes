@@ -1,0 +1,50 @@
+
+<div class="container" fxFlex.xs=100 >
+    <div class="contaner-form">
+        <div>
+            <link rel="stylesheet" href="./forgotemail.component.scss">
+        </div>
+        <div id="form-container" class="form" fxLayout="column" style="padding-top: 10%;">
+            <form [formGroup]="forgotEmailForm" (ngSubmit)="onSubmit()">
+                <div class="FundooName"  >
+                    <span id="Fletter">F</span>
+                    <span id="Uletter">u</span>
+                    <span id="Nletter">n</span>
+                    <span id="Dletter">d</span>
+                    <span id="Oletter">o</span>
+                    <span id="O1letter">o</span><br><br>
+                    <span id="head">Find Your Email</span><br><br>
+                    <span id="head1" >Enter your phone number or recovery email</span>
+                </div>
+                <div class="username" fxLayout="column" style="margin-top: 50px;"  >
+                    <div>
+                        <mat-form-field appearance="outline" style="width: 90%;">
+                            <mat-label>Phone Number or Email</mat-label>
+                            <input matInput placeholder="Placeholder" formControlName="Username"   [ngClass]="{ 'is-invalid': submitted && f.Username.errors }" />
+                            <mat-hint *ngIf="submitted && f.Username.errors" class="invalid-feedback">
+                                <mat-hint *ngIf="f.Username.errors.required" class="error">user name is required</mat-hint>
+                            </mat-hint>
+                        </mat-form-field>
+                    </div>   
+                </div>     
+                <div class="button-section" style="text-align: right;" >
+                    <button mat-raised-button class="button1" type="submit" (click)="onSubmit()">Next</button>
+                </div>
+                <div class="langauge"> 
+                    <select name="lang" id="lang">
+                        <option value="">English (United States)</option>
+                    <option value="">English (United Kingdom)</option>
+                    <option value="">Indonesia</option>
+                     </select> 
+                </div>
+                <ul class="list" fxLayout="row">
+                    <a href=""><li id="l1">Help</li></a>
+                    <a href=""><li id="l2">Privacy</li></a>
+                    <a href=""><li id="l3">Terms</li></a>
+                </ul>      
+            </form>
+        </div>
+    </div>
+</div>  
+
+

@@ -1,0 +1,19 @@
+.para1{
+    font-style: italic;
+    margin-left: 450px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.empty-button {
+    border: none;
+    background-color: white;
+    color: blue;
+    font-size: 15px;
+    font-style: italic;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+        
+    }
+
+}
