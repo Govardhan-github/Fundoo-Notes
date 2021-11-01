@@ -14,15 +14,31 @@
         <div class="icons">
             <button [matMenuTriggerFor]="aboveMenu" class="buttons" matTooltip="Change colour">
                 <img class="icon" src="../../../assets/Icons/colourpallete.svg" width="20" height="20" alt="">
-            </button>
             <mat-menu #aboveMenu="matMenu" yPosition="above">
-                <div *ngFor='let c of colorArray'>
-                   <button mat-menu-item style="padding: 0px;" (click)='colorCode(c)'>
-                      <mat-icon [ngStyle]="{color:c}">circle</mat-icon>
+                <div *ngFor='let color of colors'>
+                   <button mat-menu-item  [style.background]="color?.code" style="padding: 0px;"  (click)="setColor(color.code)">
+                      <mat-icon>circle</mat-icon>
                    </button>
                 </div>
              </mat-menu>
+            </button>
+
         </div>
+
+        <!-- <div class="icons">
+            <button class="buttons" matTooltip="colour" [matMenuTriggerFor]="colorMenu">
+                <img class="icon" src="assets/colourpallete.svg" alt="">
+                <mat-menu #colorMenu="matMenu">
+                    <div class="pop">
+                        <div *ngFor="let color of colors" class="colorButton">
+                            <button mat-mini-fab [style.background]="color?.code"
+                                (click)="setColor(color.code)"></button>
+                        </div>
+
+                    </div>
+                </mat-menu>
+            </button>
+        </div> -->
 
         <div class="icons">
             <button class="buttons">
