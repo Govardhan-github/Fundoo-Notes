@@ -47,3 +47,17 @@
     line-height: 0px !important;
     height     : 32px !important;
  }
+
+ 
+.color-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: white;
+    max-width: 150px;
+    margin-left: 5px;
+  }
+  .color-button {
+    margin-right: 1px;
+    white-space: 2px;
+  }

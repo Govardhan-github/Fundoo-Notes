@@ -20,10 +20,9 @@
                         <div>
                             <mat-form-field  appearance="outline" fxFlex.xs=100>
                             <mat-label>First name</mat-label>
-                            <input  matInput placeholder="Placeholder" formControlName="Firstname"   [ngClass]="{ 'is-invalid': submitted && f.Firstname.errors }" />
-                            <mat-hint *ngIf="submitted && f.Firstname.errors" class="invalid-feedback">
-                                <mat-hint *ngIf="f.Firstname.errors.required" class="error">e is reFirst Namquired</mat-hint>
-                            </mat-hint>
+                            <input  matInput placeholder="Placeholder" formControlName="Firstname"    />
+
+                            <mat-error>Fist Name is Required</mat-error>
                             </mat-form-field>  
                         </div>    
                         <div>

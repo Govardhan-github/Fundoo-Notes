@@ -52,6 +52,7 @@ export class IconsComponent implements OnInit {
 
   ngOnInit(): void {
     let comp = this.route.snapshot.component;
+    
 
 
     if (comp == TrashComponent) {
@@ -89,7 +90,6 @@ export class IconsComponent implements OnInit {
     this.note.archiveNotes(data).subscribe(
       (response: any) => {
         console.log('archiveResponse', response);
-        this.noteOperation.emit(response);
 
         this.router.navigateByUrl('/').then(() => {
           this.router.navigate(['/dashboard/getnotes'])
@@ -147,6 +147,7 @@ export class IconsComponent implements OnInit {
       });
   }
   
+
   setColor(color: any) {
     this.noteData.color = color;
     console.log('color', color);
@@ -157,9 +158,9 @@ export class IconsComponent implements OnInit {
     console.log(data);
     this.note.changeColorService(data).subscribe(
       (response: any) => {
-        // this.color.emit()
         this.noteOperation.emit(response);
 
+        // this.color.emit(response)
         console.log('Response of setColour', response);
       },
       (error: any) => {
@@ -167,6 +168,28 @@ export class IconsComponent implements OnInit {
 
       }
     );
+    // window.location.reload();
+  }
+  // setColor(color: any) {
+  //   this.noteData.color = color;
+  //   console.log('color', color);
+  //   let data = {
+  //     color: color,
+  //     noteIdList: [this.noteId],
+  //   }
+  //   console.log(data);
+  //   this.note.changeColorService(data).subscribe(
+  //     (response: any) => {
+  //       // this.color.emit()
+  //       this.noteOperation.emit();
+
+  //       console.log('Response of setColour', response);
+  //     },
+  //     (error: any) => {
+  //       console.log('archive Error at icons methods', error);
+
+  //     }
+  //   );
     // window.location.reload();
   }
 
@@ -185,7 +208,7 @@ export class IconsComponent implements OnInit {
 
   //   });
 
-  }
+  
 
   
 
